@@ -3,6 +3,8 @@ use substreams::pb::substreams::eth::v2::Block;
 use crate::pb::erc20;
 
 // protoc --proto_path=proto --rs_out=src proto/erc20.proto
+// rustup target add wasm32-unknown-unknown
+// cargo build --target wasm32-unknown-unknown --release
 
 #[substreams::handlers::map]
 fn map_transfers(block: Block) -> Result<erc20::Transfers, substreams::errors::Error> {

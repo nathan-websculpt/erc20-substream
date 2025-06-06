@@ -4,4 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-substreams = "0.5"
+substreams = "0.6.1"
+substreams-ethereum = "0.10.5"
+
+[build]
+target = "wasm32-unknown-unknown"

@@ -3,6 +3,11 @@ package:
   name: erc20_transfers
   version: v0.1.0
 
+binaries:
+  default:
+    type: wasm/rust-v1
+    file: ./target/wasm32-unknown-unknown/release/substreams.wasm
+
 protobuf:
   files:
     - proto/erc20.proto
