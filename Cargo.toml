@@ -1,0 +1,7 @@
+[package]
+name = "erc20-substream"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+substreams = "0.5"
