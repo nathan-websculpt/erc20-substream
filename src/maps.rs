@@ -25,7 +25,6 @@ use substreams_ethereum::Event;
 
 
 // substreams gui -e mainnet.eth.streamingfast.io:443 substreams.yaml map_transfers -s 12369621 -t +1
-// substreams gui map_transfers -e mainnet.eth.streamingfast.io:443 -s -100
 
 #[substreams::handlers::map]
 pub fn map_transfers(block: Block) -> Result<TransferEvents, Error> {
