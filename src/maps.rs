@@ -16,6 +16,11 @@ use substreams_ethereum::Event;
 // Compiles the Rust code.
 // Creates a Substreams package file (.spkg).
 
+// cargo clean	
+// Removes build artifacts (target directory), then you will probably have to run: cargo build --target wasm32-unknown-unknown --release
+
+
+
 // substreams protogen ./substreams.yaml --exclude-paths="sf/ethereum,sf/substreams,google"
 
 #[substreams::handlers::map]
