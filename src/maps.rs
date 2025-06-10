@@ -7,7 +7,7 @@ use substreams_ethereum::block_view::LogView;
 use substreams_ethereum::pb::eth::v2::Block;
 use substreams_ethereum::Event;
 
-// protoc --proto_path=proto --rs_out=src proto/erc20.proto
+// protoc --proto_path=proto --rs_out=src proto/v1/erc20.proto
 // rustup target add wasm32-unknown-unknown
 // cargo build --target wasm32-unknown-unknown --release
 
