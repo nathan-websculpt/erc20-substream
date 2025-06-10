@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package erc20.types.v1;
+
+message TransferEvents {
+  repeated TransferEvent transfers = 1;
+}
+
+message TransferEvent {
+  // contract address
+  string contract = 1;
+
+  // event payload
+  string from = 2;
+  string to = 3;
+  string value = 4;
+
+  // trace information
+  string tx_id = 5;
+  uint64 block_index = 6;
+  uint32 index=7;
+}

@@ -10,9 +10,9 @@ binaries:
 
 protobuf:
   files:
-    - proto/erc20.proto
+    - erc20.proto
   importPaths:
-    - ./proto
+    - ./proto/v1
 
 modules:
   - name: map_transfers
@@ -20,4 +20,6 @@ modules:
     inputs:
       - source: sf.ethereum.type.v2.Block
     output:
-      type: proto:erc20.Transfers
+      type: proto:erc20.types.v1.TransferEvents
+
+network: mainnet
